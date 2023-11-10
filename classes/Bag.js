@@ -1,3 +1,4 @@
+const Person = require("../classes/Person.js");
 class Bag {
     constructor(weight,id,owner=null){
         this.weight = weight;
@@ -11,7 +12,7 @@ class Bag {
     }
 
     assignOwner(person){
-        this.owner = person.name;
+        this.owner = person;
     }
 }
 

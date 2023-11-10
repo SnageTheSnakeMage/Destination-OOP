@@ -1,4 +1,5 @@
-const Bag = require("../../classes/Bag.js");
+const Bag = require("../../classes/Bag.js")
+const Person = require("../../classes/Person.js")
 
 describe("Able to create instance of bag class", () =>{
     test("create instance of bag class", () =>{
@@ -13,7 +14,7 @@ describe("Able to create instance of bag class", () =>{
     })
     test("updating the owner", () =>{
         let newOwner = new Person();
-        nullBag.assignOnwer(newOwner);
+        nullBag.assignOwner(newOwner);
         expect(nullBag.owner).toBe(newOwner);
     })
 })
